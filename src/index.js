@@ -1,24 +1,22 @@
-
-function ReverseStringFunc(str) {
-    var StrArr=[];
-    for(var i=0; i<str.length; i++){
-    StrArr[i]=str.charAt(i);
-    }
-    var RvrsStrArr=StrArr.reverse()
-    return RvrsStrArr.join("");
-}
-function ArrBlnkFunc(str1, str2){
-        var Arr=[];
-        for(var i=0; i<str2.length; i++) {
-            Arr.push([]);
-        for(var j=0 ; j<str1.length+str2.length; j++) {
-            Arr[i][j]=0;
-        }
- }
- return Arr;
-    }
-
 module.exports = function multiply(first, second) {
+  function ReverseStringFunc(str) {
+      var StrArr=[];
+      for(var i=0; i<str.length; i++){
+      StrArr[i]=str.charAt(i);
+      }
+      var RvrsStrArr=StrArr.reverse()
+      return RvrsStrArr.join("");
+  }
+  function ArrBlnkFunc(str1, str2){
+          var Arr=[];
+          for(var i=0; i<str2.length; i++) {
+              Arr.push([]);
+          for(var j=0 ; j<str1.length+str2.length; j++) {
+              Arr[i][j]=0;
+          }
+   }
+   return Arr;
+      }
     var ArrPrdct=[];
     var FrstStr=ReverseStringFunc(first);
     var SndStr=ReverseStringFunc(second);
